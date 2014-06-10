@@ -3,7 +3,7 @@ function __autoload($className){
 	include_once("models/$className.php");	
 }
 
-$users=new User("your_host","your_user","your_password","your_database");
+$users=new User("localhost","app001","12345","app001");
 
 if(!isset($_POST['action'])) {
 	print json_encode(0);
